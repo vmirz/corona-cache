@@ -2,7 +2,7 @@
 
 path=$(dirname "$0")
 
-LIBRARY_NAME="CACHE"
+LIBRARY_NAME="cache"
 LIBRARY_TYPE="plugin"
 
 # Verify arguments
