@@ -126,6 +126,7 @@ function db.new( database_name )
 		check = [[SELECT count(*) FROM KeyValue]]
 		if db:exec(check) ~= 0 then
 			db:exec( [[CREATE TABLE IF NOT EXISTS KeyValue (Key STRING, Value, Type, UNIQUE(Key)) ]] )
+		else
 		end
 	end
 

@@ -1,11 +1,10 @@
-local cacheDb = require "scripts.cache.cache_db"
+local cacheDb = require "cache_db"
 local lfs = require( "lfs" )
 local cache = {}
 
 local cacheList = {}
 
 local function loadCaches( )
-
 	local doc_path = system.pathForFile( "", system.DocumentsDirectory )
 
 	for file in lfs.dir( doc_path ) do

@@ -7,10 +7,12 @@ local cache = require "cache"
 
 -- Create a new cache and save a table value
 
-local myCache  = cache.newCache( "myCache" )
-myCache.smile = ":)"
+local myCache  = cache.newCache( "demo" )
+
+myCache.hello = "hello!"
 
 -- Later look up a value in the cache
 
-local myCache  = cache.getCache( "myCache" )
-print(myCache.smile)
+local myCache  = cache.getCache( "demo" )
+
+print(myCache.hello)
