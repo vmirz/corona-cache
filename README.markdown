@@ -2,21 +2,17 @@
 A simple and easy-to-use persistance layer for the Corona SDK
 
 # Usage
-------------
+
 Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 
 ##### Creating a cache
 * cache.newCache( cacheName )
-##### Example
-------------
 ```lua
     local cache = require("cache")
     local usersCache = cache.newCache("users")
 ```
 ##### Saving to cache
 * Save string, number, boolean, or table value types
-##### Example
-------------
 ```lua
     local cache = require("cache")
     -- Create a new cache
@@ -26,8 +22,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 
 ##### Reading from cache
 * cache.getCache( cacheName )
-##### Example
-------------
 ```lua 
     local cache = require("cache")
     local usersCache  = cache.getCache( "users" )
@@ -35,8 +29,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 ```
 ##### Updating cache value
 * To update a cached value is to overwrite it
-##### Example
-------------
 ```lua
     local cache = require("cache")
     local usersCache = cache.getCache("users")
@@ -48,8 +40,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 
 ##### Removing value from cache
 * Setting to nil will delete the value from cache
-##### Example
-------------
 ```lua
     local cache = require("cache")
     local usersCache = cache.getCache("users")
@@ -59,8 +49,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 ##### Bulk add
 * When adding or updating many values at once (ie. in a loop), you will want to do this operation in bulk for performance reason.
 * cache.bulkInsert( cache, tableOfValues )
-##### Example
-------------
 ```lua
     local cache = require("cache")
     local usersCache = cache.getCache("users")
@@ -74,8 +62,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 
 ##### Deleting cache
 * cache.deleteCache( cacheName )
-##### Example
-------------
 ```lua
     local cache = require("cache")
     local usersCache = cache.getCache("users")
