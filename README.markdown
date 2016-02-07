@@ -25,6 +25,8 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
 ```lua 
     local cache = require("cache")
     local usersCache  = cache.getCache( "users" )
+    
+    -- Output: Washington D.C
     print(usersCache.viktor.location)
 ```
 ##### Updating cache value
@@ -34,7 +36,6 @@ Drop `cache.lua` and `cache_db.lua` in your root project folder (with main.lua)
     local usersCache = cache.getCache("users")
     local userInfo = usersCache.viktor
     userInfo.age = 27
-    -- reassing the cached table back to the root key to persist changes
     usersCache.viktor = userInfo
 ```
 
